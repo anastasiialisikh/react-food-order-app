@@ -1,0 +1,7 @@
+.badge {
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5rem;
+	background-color: #313138;
+	margin-left: 10px;
+}

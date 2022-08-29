@@ -1,0 +1,28 @@
+main {
+	width: 55%;
+	margin: 150px auto 0;
+}
+
+.info {
+	text-align: center;
+	background-color: #313138;
+}
+
+.list__dishes {
+	background-color: white;
+	color: black;
+}
+
+.list__dishes ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.error {
+	color: red;
+}
+
+.center {
+	text-align: center;
+}

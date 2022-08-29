@@ -1,0 +1,24 @@
+.item {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 1px lightgrey solid;
+}
+
+.item__info h4 {
+	margin: 0;
+}
+
+.item__info p {
+	font-style: italic;
+	margin: 5px 0;
+}
+
+.item__price {
+	color: #6c5a7e;
+	font-weight: bold;
+}
+
+.item__actions {
+	text-align: right;
+}

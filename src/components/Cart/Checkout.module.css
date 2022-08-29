@@ -1,0 +1,35 @@
+.form-control {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	width: 200px;
+}
+
+.actions {
+	padding: 20px 0 10px;
+	text-align: right;
+}
+
+.actions button {
+	margin-left: 20px;
+}
+
+.invalid label {
+	color: red;
+}
+
+.invalid input {
+	border: 1px solid red;
+}
+
+.invalid p {
+	color: red;
+	margin: 0;
+}

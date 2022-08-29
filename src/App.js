@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
+import { CartContextProvider } from './store/cart-context';
+
+import Cart from './components/Cart/Cart';
+import Header from './components/Header/Header';
+import Dishes from './components/Dishes/Dishes';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isCartVisible, setCartVisible] = useState(false);
+
+	const showCartHandler = () => {
+		setCartVisible(true);
+	}
+
+	const hideCartHandler = () => {
+		setCartVisible(false);
+	}
+
+	return (
+		<CartContextProvider>
+			{isCartVisible ? <Cart onCloseCart={hideCartHandler}></Cart> : ''}
+			<Header onShowCard={showCartHandler}></Header>
+			<Dishes></Dishes>
+		</CartContextProvider>
+	);
 }
 
 export default App;

@@ -1,0 +1,46 @@
+.item {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #6c5a7e;
+	padding: 20px 0;
+}
+
+h3, h4 {
+	margin: 0;
+}
+
+.amount {
+	display: flex;
+	justify-content: space-between;
+	width: 10rem;
+	margin-top: 10px;
+}
+
+.price {
+	color: #6c5a7e;
+}
+
+.actions {
+	align-self: center;
+}
+
+.actions button {
+	width: 40px;
+	margin-left: 5px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 1rem;
+	font-size: larger;
+	padding: 5px;
+}
+
+.actions button:hover {
+	background-color: rgb(160, 136, 184);
+	color: white;
+}
+
+.actions button:disabled {
+	background-color: lightgray;
+	border-color: lightgray;
+	color: white;
+}
